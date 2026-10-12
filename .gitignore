@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Secrets and environment (keep .env.example tracked)
+.env
+.env.*
+!.env.example
+
+# Session, auth state and databases (sensitive)
+data/*
+!data/.gitkeep
+*.enc
+*.session
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.db
+*.db-journal
+*.tmp
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Tooling output
+coverage/
+.vitest/
+.eslintcache
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
